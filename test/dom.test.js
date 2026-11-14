@@ -72,7 +72,7 @@ test("panel örnek ilanları, kahraman alanını ve istatistikleri gösterir", a
   assert.ok(view.querySelector(".hero"), "kahraman alanı yok");
   assert.ok(view.querySelectorAll(".stat").length >= 4, "istatistik kartları eksik");
   assert.ok(view.querySelectorAll(".ann-card").length > 0, "ilan kartı yok");
-  assert.match(view.textContent, /Zabıta/);
+  assert.match(view.textContent, /Beden İşçisi/);
   assert.equal(ctx.errors.length, 0, String(ctx.errors[0]));
 });
 
