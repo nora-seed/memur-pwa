@@ -1,0 +1,21 @@
+{
+  "name": "Memur Alım — Kamu İlanları",
+  "short_name": "Memur Alım",
+  "description": "KPSS P93 ve önlisans mezunları için kamu personel alım ilanlarını listeleyen, uygunluğunu gösteren ve başvuruları takip eden çevrimdışı PWA.",
+  "lang": "tr",
+  "id": "./",
+  "start_url": "./index.html",
+  "scope": "./",
+  "display": "standalone",
+  "display_override": ["standalone", "minimal-ui"],
+  "orientation": "portrait",
+  "background_color": "#f4f2fc",
+  "theme_color": "#4f46e5",
+  "categories": ["government", "productivity", "utilities"],
+  "icons": [
+    { "src": "icons/icon-192.png", "sizes": "192x192", "type": "image/png", "purpose": "any" },
+    { "src": "icons/icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any" },
+    { "src": "icons/icon-192-maskable.png", "sizes": "192x192", "type": "image/png", "purpose": "maskable" },
+    { "src": "icons/icon-512-maskable.png", "sizes": "512x512", "type": "image/png", "purpose": "maskable" }
+  ]
+}
