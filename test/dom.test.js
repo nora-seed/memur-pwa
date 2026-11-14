@@ -72,7 +72,7 @@ test("panel örnek ilanları, kahraman alanını ve istatistikleri gösterir", a
   assert.ok(view.querySelector(".hero"), "kahraman alanı yok");
   assert.ok(view.querySelectorAll(".stat").length >= 4, "istatistik kartları eksik");
   assert.ok(view.querySelectorAll(".ann-card").length > 0, "ilan kartı yok");
-  assert.match(view.textContent, /Örnek ilanlar/);
+  assert.match(view.textContent, /Zabıta/);
   assert.equal(ctx.errors.length, 0, String(ctx.errors[0]));
 });
 
@@ -165,11 +165,11 @@ test("filtre paneli şehir filtresini uygular", async function () {
   const form = ctx.document.getElementById("filterForm");
   assert.ok(form, "filtre formu açılmadı");
 
-  form.elements.city.value = "Ankara";
+  form.elements.city.value = "İstanbul";
   form.dispatchEvent(new ctx.window.Event("submit", { bubbles: true, cancelable: true }));
 
   const chips = ctx.document.querySelectorAll(".active-filters .chip");
   assert.equal(chips.length, 1);
-  assert.match(chips[0].textContent, /Ankara/);
+  assert.match(chips[0].textContent, /İstanbul/);
   assert.ok(ctx.document.querySelectorAll(".ann-card").length > 0, "filtre sonrası ilan yok");
 });
